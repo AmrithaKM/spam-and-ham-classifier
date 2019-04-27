@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body  bgcolor="">
+
+	<header>
+		<center><div class="container">
+		<div id="brandname">
+		
+		</div>
+		<center><div><h1>SPAM OR HAM</h1>
+		
+	</div></center>
+	</header>
+	<center><div class="results">
+
+
+		
+	{% if prediction == 1%}<br><h1>SPAM</h1>
+	
+	{% elif prediction == 0%}<br>
+	<h1>HAM</h1>
+	{% endif %}
+
+	</div></center>
+
+</body>
+</html>
